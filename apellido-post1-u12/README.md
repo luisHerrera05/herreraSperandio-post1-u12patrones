@@ -161,11 +161,3 @@ El workflow `.github/workflows/arquitectura.yml` ejecuta las 4 reglas ArchUnit y
 (`procesamiento` pasa a depender de `infraestructura`), se hizo push y el job `arquitectura` **falló** con
 `procesamientoSinPersistenciaNiWeb`. Luego se revirtió con `git revert HEAD` y el pipeline volvió a verde.
 
-![Build fallido por violación de la Regla 1](capturas/actions-fallo.png)
-![Build en verde tras el revert](capturas/actions-verde.png)
-
-## Capturas de funcionamiento
-![mvn clean package: BUILD SUCCESS](capturas/build-success.png)
-![Flujo: creación, validación y cálculo por categoría](capturas/flujo-crear.png)
-![Cambio de estado: logs de los tres observadores](capturas/observadores.png)
-![4 reglas ArchUnit en verde](capturas/archunit-verde.png)
